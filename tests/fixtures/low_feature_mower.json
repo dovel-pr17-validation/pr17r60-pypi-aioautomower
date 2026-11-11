@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "type": "mower",
+      "id": "1234",
+      "attributes": {
+        "system": {
+          "name": "Test Mower 1",
+          "model": "Automower Aspire",
+          "serialNumber": 123
+        },
+        "battery": {
+          "batteryPercent": 50,
+          "remainingChargingTime": 309
+        },
+        "capabilities": {
+          "canConfirmError": false,
+          "headlights": false,
+          "position": false,
+          "stayOutZones": false,
+          "workAreas": false
+        },
+        "mower": {
+          "mode": "MAIN_AREA",
+          "activity": "PARKED_IN_CS",
+          "inactiveReason": "NONE",
+          "state": "RESTRICTED",
+          "errorCode": 1,
+          "errorCodeTimestamp": 1729269469000
+        },
+        "calendar": {
+          "tasks": [
+            {
+              "start": 120,
+              "duration": 49,
+              "monday": true,
+              "tuesday": false,
+              "wednesday": false,
+              "thursday": false,
+              "friday": false,
+              "saturday": false,
+              "sunday": false
+            }
+          ]
+        },
+        "planner": {
+          "nextStartTimestamp": 1685991600000,
+          "override": {
+            "action": "NOT_ACTIVE"
+          },
+          "restrictedReason": "WEEK_SCHEDULE"
+        },
+        "metadata": {
+          "connected": true,
+          "statusTimestamp": 1697669932683
+        },
+        "positions": [],
+        "settings": {
+          "cuttingHeight": null,
+          "headlight": {
+            "mode": null
+          }
+        },
+        "statistics": {}
+      }
+    }
+  ]
+}

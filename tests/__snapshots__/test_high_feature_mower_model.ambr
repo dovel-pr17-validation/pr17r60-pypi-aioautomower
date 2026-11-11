@@ -1,0 +1,283 @@
+# serializer version: 1
+# name: test_mower_snapshot[message.0]
+  dict({
+    'code': 'no_loop_signal',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.ERROR: 'error'>,
+    'time': datetime.datetime(2025, 6, 28, 21, 36, 27, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.1]
+  dict({
+    'code': 'upside_down',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.FATAL: 'fatal'>,
+    'time': datetime.datetime(2025, 6, 28, 14, 22, 56, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.2]
+  dict({
+    'code': 'no_loop_signal',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.ERROR: 'error'>,
+    'time': datetime.datetime(2025, 6, 27, 20, 15, 22, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.3]
+  dict({
+    'code': 'no_loop_signal',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.ERROR: 'error'>,
+    'time': datetime.datetime(2025, 6, 26, 20, 15, 22, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.4]
+  dict({
+    'code': 'connection_not_changed',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.WARNING: 'warning'>,
+    'time': datetime.datetime(2025, 6, 21, 16, 25, 6, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.5]
+  dict({
+    'code': 'collision_sensor_error',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.FATAL: 'fatal'>,
+    'time': datetime.datetime(2025, 4, 10, 13, 54, 19, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[message.6]
+  dict({
+    'code': 'no_loop_signal',
+    'latitude': 49.0,
+    'longitude': 10.0,
+    'severity': <Severity.ERROR: 'error'>,
+    'time': datetime.datetime(2025, 4, 10, 13, 54, 15, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+  })
+# ---
+# name: test_mower_snapshot[status.battery]
+  dict({
+    'battery_percent': 100,
+    'remaining_charging_time': None,
+  })
+# ---
+# name: test_mower_snapshot[status.calendar]
+  dict({
+    'tasks': list([
+      dict({
+        'duration': datetime.timedelta(seconds=18000),
+        'friday': True,
+        'monday': True,
+        'saturday': False,
+        'start': datetime.time(19, 0),
+        'sunday': False,
+        'thursday': False,
+        'tuesday': False,
+        'wednesday': True,
+        'work_area_id': 123456,
+      }),
+      dict({
+        'duration': datetime.timedelta(seconds=28800),
+        'friday': False,
+        'monday': False,
+        'saturday': True,
+        'start': datetime.time(0, 0),
+        'sunday': False,
+        'thursday': True,
+        'tuesday': True,
+        'wednesday': False,
+        'work_area_id': 0,
+      }),
+    ]),
+  })
+# ---
+# name: test_mower_snapshot[status.capabilities]
+  dict({
+    'can_confirm_error': True,
+    'headlights': True,
+    'position': True,
+    'stay_out_zones': True,
+    'work_areas': True,
+  })
+# ---
+# name: test_mower_snapshot[status.metadata]
+  dict({
+    'connected': True,
+    'status_dateteime': datetime.datetime(2023, 10, 18, 22, 58, 52, 683000, tzinfo=datetime.timezone.utc),
+  })
+# ---
+# name: test_mower_snapshot[status.mower]
+  dict({
+    'activity': <MowerActivities.PARKED_IN_CS: 'parked_in_cs'>,
+    'error_code': 0,
+    'error_datetime': None,
+    'error_key': None,
+    'inactive_reason': <InactiveReasons.PLANNING: 'planning'>,
+    'is_error_confirmable': False,
+    'mode': <MowerModes.MAIN_AREA: 'main_area'>,
+    'state': <MowerStates.RESTRICTED: 'restricted'>,
+    'work_area_id': 123456,
+    'work_area_name': 'Front lawn',
+  })
+# ---
+# name: test_mower_snapshot[status.planner]
+  dict({
+    'external_reason': <ExternalReasons.SMART_ROUTINE_WILDLIFE_PROTECTION: 'smart_routine_wildlife_protection'>,
+    'next_start_datetime': datetime.datetime(2023, 6, 5, 19, 0, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+    'override': dict({
+      'action': <Actions.NOT_ACTIVE: 'not_active'>,
+    }),
+    'restricted_reason': <RestrictedReasons.WEEK_SCHEDULE: 'week_schedule'>,
+  })
+# ---
+# name: test_mower_snapshot[status.positions]
+  list([
+    dict({
+      'latitude': 35.5402913,
+      'longitude': -82.5527055,
+    }),
+    dict({
+      'latitude': 35.5407693,
+      'longitude': -82.5521503,
+    }),
+    dict({
+      'latitude': 35.5403241,
+      'longitude': -82.5522924,
+    }),
+    dict({
+      'latitude': 35.5406973,
+      'longitude': -82.5518579,
+    }),
+    dict({
+      'latitude': 35.5404659,
+      'longitude': -82.5516567,
+    }),
+    dict({
+      'latitude': 35.5406318,
+      'longitude': -82.5515709,
+    }),
+    dict({
+      'latitude': 35.5402477,
+      'longitude': -82.5519437,
+    }),
+    dict({
+      'latitude': 35.5403503,
+      'longitude': -82.5516889,
+    }),
+    dict({
+      'latitude': 35.5401429,
+      'longitude': -82.551536,
+    }),
+    dict({
+      'latitude': 35.5405489,
+      'longitude': -82.5512195,
+    }),
+    dict({
+      'latitude': 35.5404005,
+      'longitude': -82.5512115,
+    }),
+    dict({
+      'latitude': 35.5405969,
+      'longitude': -82.551418,
+    }),
+    dict({
+      'latitude': 35.5403437,
+      'longitude': -82.5523917,
+    }),
+    dict({
+      'latitude': 35.5403481,
+      'longitude': -82.5520054,
+    }),
+  ])
+# ---
+# name: test_mower_snapshot[status.settings]
+  dict({
+    'cutting_height': 4,
+    'headlight': dict({
+      'mode': <HeadlightModes.EVENING_ONLY: 'evening_only'>,
+    }),
+  })
+# ---
+# name: test_mower_snapshot[status.statistics]
+  dict({
+    'cutting_blade_usage_time': 1234,
+    'downtime': 123,
+    'number_of_charging_cycles': 1380,
+    'number_of_collisions': 11396,
+    'total_charging_time': 4334400,
+    'total_cutting_time': 4194000,
+    'total_drive_distance': 1780272,
+    'total_running_time': 4564800,
+    'total_searching_time': 370800,
+    'uptime': 4567,
+  })
+# ---
+# name: test_mower_snapshot[status.stay_out_zones]
+  dict({
+    'dirty': False,
+    'zones': dict({
+      '81C6EEA2-D139-4FEA-B134-F22A6B3EA403': dict({
+        'enabled': True,
+        'name': 'Springflowers',
+      }),
+      'AAAAAAAA-BBBB-CCCC-DDDD-123456789101': dict({
+        'enabled': False,
+        'name': 'Danger Zone',
+      }),
+    }),
+  })
+# ---
+# name: test_mower_snapshot[status.system]
+  dict({
+    'model': '450XH-TEST',
+    'name': 'Test Mower 1',
+    'serial_number': '123',
+  })
+# ---
+# name: test_mower_snapshot[status.work_area_dict]
+  dict({
+    0: 'my_lawn',
+    123456: 'Front lawn',
+    654321: 'Back lawn',
+  })
+# ---
+# name: test_mower_snapshot[status.work_area_names]
+  list([
+    'Front lawn',
+    'Back lawn',
+    'my_lawn',
+    'no_work_area_active',
+  ])
+# ---
+# name: test_mower_snapshot[status.work_areas]
+  dict({
+    0: dict({
+      'cutting_height': 10,
+      'enabled': False,
+      'last_time_completed': datetime.datetime(2024, 8, 12, 5, 7, 49, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+      'name': 'my_lawn',
+      'progress': 20,
+    }),
+    123456: dict({
+      'cutting_height': 50,
+      'enabled': True,
+      'last_time_completed': datetime.datetime(2024, 8, 12, 7, 54, 29, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
+      'name': 'Front lawn',
+      'progress': 40,
+    }),
+    654321: dict({
+      'cutting_height': 25,
+      'enabled': True,
+      'last_time_completed': None,
+      'name': 'Back lawn',
+      'progress': None,
+    }),
+  })
+# ---
